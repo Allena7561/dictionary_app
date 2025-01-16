@@ -1,0 +1,62 @@
+<!--
+Amber Allen
+January 15th, 2025
+Dictionary Application to practice API requests
+API: https://dictionaryapi.dev/
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--stylesheet-->
+    <link rel="stylesheet" href="app.css">
+    <title>Dictionary</title>
+</head>
+
+<body>
+    <!--Header: contains page title and search bar-->
+    <div id="header">
+        <h1>Dictionary</h1>
+        <div id="searchContainer">
+            <input type=text placeholder="Search a word" />
+            <img src="images\iconSearch.png" />
+        </div>
+    </div>
+
+    <!--Container for two interior divs-->
+    <div id="outerContainer">
+        <!--Left div will contain main content-->
+        <div id="leftContainer">
+            <div id="resultContainer">
+                <div id="resultHeader">
+                    <h2>Search a word to get started</h2>
+                </div>
+                <div id="definitionsContainer">
+                    <h3>Definitions</h3>
+                    <div id="definitions">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Right div will contain previous words-->
+        <div id="rightContainer">
+            <div id="prevWords">
+                <h2>Previously Searched Words</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>

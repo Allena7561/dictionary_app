@@ -1,0 +1,248 @@
+/*
+Amber Allen
+January 14th, 2025
+Dictionary Application to practice API requests
+API: https://dictionaryapi.dev/
+*/
+
+
+@font-face {
+    font-family: 'crimsonBold';
+    src: url(fonts/Crimson_Text/CrimsonText-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'crimsonReg';
+    src: url(fonts/Crimson_Text/CrimsonText-Regular.ttf);
+}
+
+html {
+    margin: 0px;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'crimsonReg';
+}
+
+body {
+    margin: 0px;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    font-family: 'crimsonBold';
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+    min-height: 150px;
+    background-color: rgb(12, 31, 31);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
+}
+
+#header h1 {
+    width: 60%;
+    color: white;
+    margin: 0px;
+}
+
+
+#searchContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 40px;
+}
+
+#searchContainer img {
+    height: 36px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    padding-right: 10px;
+}
+
+#searchContainer img:hover {
+    cursor: pointer;
+}
+
+#searchContainer input {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 0px;
+    font-size: 15px;
+    padding-left: 10px;
+
+    border-radius: 20px 0 0 20px;
+}
+
+#searchContainer p {
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100%;
+    margin: 0px;
+    place-content: center;
+
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#outerContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+
+#rightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+#prevWords {
+    min-height: 400px;
+    width: 400px;
+    max-width: 100%;
+    margin: 40px;
+    margin-top: 55px;
+    border: 5px;
+    border-style: double;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#prevWords h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: white;
+    background-color: rgb(12, 31, 31);
+    text-align: center;
+    min-height: 50px;
+    height: fit-content;
+    place-content: center;
+}
+
+
+
+#resultContainer {
+    margin: 20px;
+    margin-left: 0px;
+
+
+}
+
+#resultContainer h1 {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    color: rgb(70, 105, 105);
+    font-size: 45px;
+}
+
+#resultContainer h2 {
+    margin-top: 0px;
+}
+
+#definitionsContainer {
+    box-shadow: 0px 3px 4px 2px rgba(0, 0, 0, 0.75);
+}
+
+
+#definitionsContainer h3 {
+    margin-bottom: 0px;
+    padding-left: 5px;
+    color: white;
+    background-color: rgb(12, 31, 31);
+}
+
+
+#definitions {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+#definitions p {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    line-height: 17px;
+}
+
+
+.entry {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.entry p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+
+
+#definitions b {
+    margin-left: 5px;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+#resultHeader {
+    line-height: 35px;
+}
+
+
+.prevWordEntry {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.prevWordEntry p {
+    margin: 0px;
+}
+
+.prevWordEntry a {
+    text-decoration: none;
+    color: black;
+}
+
+.prevWordEntry a:hover {
+    cursor: pointer;
+}
